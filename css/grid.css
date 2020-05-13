@@ -1,0 +1,19 @@
+.game-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+.fighter-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+}
