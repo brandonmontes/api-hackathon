@@ -1,3 +1,5 @@
+/* Title Logos */
+
 .smash-64 {
   background-image: url(../images/logos/smash-64-logo.png);
 }
@@ -17,6 +19,31 @@
 .smash-ultimate{
   background-image: url(../images/logos/smash-ultimate-logo.png);
 }
+
+/* Title Logos End */
+
+
+/* Icon Background */
+
+.play-video {
+  background-image: url(../images/icons/play-icon.png);
+}
+
+.pause-video {
+  background-image: url(../images/icons/pause-icon.png);
+}
+
+.play-audio {
+  background-image: url(../images/icons/audio-icon.png);
+}
+
+.mute-audio {
+  background-image: url(../images/icons/audio-mute-icon.png);
+}
+/* Icon Background End */
+
+
+/* Fighter Backgrounds */
 
 .doctor-mario {
   background-image: url(../images/fighters/doctor-mario.png);
@@ -121,3 +148,5 @@
 .roy {
   background-image: url(../images/fighters/roy.png);
 }
+
+/* Fighter Backgroung End */

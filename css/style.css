@@ -38,9 +38,12 @@ h1 {
   background-position: center;
 }
 
-.pause-music {
-  font-family: 'super_smash';
-  font-size: xx-large;
+.pause {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2%;
+  height: 2rem;
 }
 
 .exit-main-screen {
