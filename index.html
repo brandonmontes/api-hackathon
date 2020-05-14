@@ -12,37 +12,97 @@
 </head>
 
 <body>
-  <video autoplay muted loop id="smash-trailer">
-    <source src="video/Super-Smash-Bros-Ultimate-More-Fighters-25-2.mp4" type="video/mp4">
-  </video>
-  <audio autoplay loop id="theme-audio" volume="0.1">
-    <source src="audio/Super-Smash-Bros-Ultimate-Main-Theme-Lifelight.mp3" type="audio/mp3">
+  <div id="page-1">
+    <video autoplay muted loop id="smash-trailer">
+      <source src="video/Super-Smash-Bros-Ultimate-More-Fighters-25-2.mp4" type="video/mp4">
+    </video>
+    <audio autoplay loop id="theme-audio">
+      <source src="audio/Super-Smash-Bros-Melee-opening-.mp3" type="audio/mp3">
       Your browser does not support this audio element
-  </audio>
-  <div id="cover-body" class="header-container">
-    <div>
-      <img src="images/logos/super-smash-logo.jpg" alt="super-smash-logo">
-    </div>
-  </div>
-  <div>
-    <div>
-      <header>
-        <h1>Select Game</h1>
-      </header>
-    </div>
-    <div class="game-container">
-      <button class="game-select smash-64"></button>
-      <button class="game-select smash-melee"></button>
-      <button class="game-select smash-brawl"></button>
-      <button class="game-select smash-4"></button>
-      <button class="game-select smash-ultimate"></button>
+    </audio>
+    <div id="cover-body" class="header-container">
+      <div>
+        <img src="images/logos/super-smash-logo.jpg" alt="super-smash-logo">
+      </div>
     </div>
     <div>
-      <button class="pause-video pause" id="background-vid"></button>
-      <button class="pause mute-audio" id="mute-button"></button>
+      <div>
+        <header class="text-header-1">
+          <h1>Select Game</h1>
+        </header>
+      </div>
+      <div class="game-container">
+        <button class="game-select smash-64"></button>
+        <button class="game-select smash-melee" id="melee"></button>
+        <button class="game-select smash-brawl"></button>
+        <button class="game-select smash-4"></button>
+        <button class="game-select smash-ultimate"></button>
+      </div>
+      <div class="icons">
+        <button class="pause-video pause" id="background-vid"></button>
+        <button class="pause mute-audio" id="mute-button"></button>
+      </div>
     </div>
   </div>
 
+
+  <div id="page-2" class="hidden">
+    <video autoplay muted loop id="smash-melee-menu">
+      <source src="video/smash-bros-melee-background.mp4" type="video/mp4">
+    </video>
+    <audio autoplay loop id="menu-music">
+      <source src="audio/Menu-1-Super-Smash-Bros-Melee.mp3" type="audio/mp3">
+      Your browser does not support the audio element
+    </audio>
+    <div class="header-container">
+      <div>
+        <img src="images/logos/smash-melee.jpg" alt="smash-bros-melee-logo">
+      </div>
+    </div>
+    <div>
+      <header class="text-header-2">
+        <h1>Choose your Fighter</h1>
+      </header>
+    </div>
+    <div>
+      <div class="fighter-container">
+        <button class="fighter-select doctor-mario" id="4" onclick="fighterSelected(4)"></button>
+        <button class="fighter-select mario" id="13" onclick="fighterSelected(13)"></button>
+        <button class="fighter-select luigi" id="12" onclick="fighterSelected(12)"></button>
+        <button class="fighter-select bowser" id="1" onclick="fighterSelected(1)"></button>
+        <button class="fighter-select princess-peach" id="18" onclick="fighterSelected(18)"></button>
+        <button class="fighter-select yoshi" id="24" onclick="fighterSelected(24)"></button>
+        <button class="fighter-select donkey-kong" id="3" onclick="fighterSelected(3)"></button>
+        <button class="fighter-select captain-falcon" id="2" onclick="fighterSelected(2)"></button>
+        <button class="fighter-select ganondorf" id="7" onclick="fighterSelected(7)"></button>
+        <button class="fighter-select falco" id="5" onclick="fighterSelected(5)"></button>
+        <button class="fighter-select fox" id="6" onclick="fighterSelected(6)"></button>
+        <button class="fighter-select ness" id="17" onclick="fighterSelected(17)"></button>
+        <button class="fighter-select ice-climbers" id="8" onclick="fighterSelected(8)"></button>
+        <button class="fighter-select kirby" id="10" onclick="fighterSelected(10)"></button>
+        <button class="fighter-select samus" id="22" onclick="fighterSelected(22)"></button>
+        <button class="fighter-select zelda" id="26" onclick="fighterSelected(26)"></button>
+        <button class="fighter-select shiek" id="23" onclick="fighterSelected(23)"></button>
+        <button class="fighter-select link" id="11" onclick="fighterSelected(11)"></button>
+        <button class="fighter-select young-link" id="25" onclick="fighterSelected(25)"></button>
+        <button class="fighter-select pichu" id="19" onclick="fighterSelected(19)"></button>
+        <button class="fighter-select pikachu" id="20" onclick="fighterSelected(20)"></button>
+        <button class="fighter-select jigglypuff" id="9" onclick="fighterSelected(9)"></button>
+        <button class="fighter-select mewtwo" id="15" onclick="fighterSelected(15)"></button>
+        <button class="fighter-select mr-game-and-watch" id="16" onclick="fighterSelected(16)"></button>
+        <button class="fighter-select marth" id="14" onclick="fighterSelected(14)"></button>
+        <button class="fighter-select roy" id="21" onclick="fighterSelected(21)"></button>
+      </div>
+    </div>
+    <div class="icons">
+      <button class="exit-main-screen" id="exit">Exit</button>
+      <div>
+        <button class="pause pause-video" id="pause-menu"></button>
+        <button class="pause play-audio"></button>
+      </div>
+    </div>
+
+  </div>
 
 
 

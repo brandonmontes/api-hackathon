@@ -1,5 +1,7 @@
 h1 {
   font-family: 'super_smash';
+  font-size: 400%;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fffdfd, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
 #smash-trailer {
@@ -28,11 +30,15 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  background-color: transparent;
+  border: solid;
 }
 
 .fighter-select{
   width: 10%;
   height: 300px;
+  border: transparent;
+  background-color: transparent;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -42,11 +48,24 @@ h1 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: transparent;
+  border: transparent;
   width: 2%;
   height: 2rem;
+}
+
+.icons {
+  margin-top: 5%;
 }
 
 .exit-main-screen {
   font-family: 'super_smash';
   font-size: xx-large;
+  background-color: transparent;
+  border: transparent;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fffdfd, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.hidden {
+  display: none;
 }

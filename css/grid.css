@@ -16,4 +16,15 @@
 .header-container {
   display: flex;
   justify-content: center;
+  padding-top: 2%;
+}
+
+.text-header-1 {
+  margin-top: 15%;
+  text-align: center;
+}
+
+.text-header-2 {
+  margin-top: 5%;
+  text-align: center;
 }
