@@ -9,5 +9,5 @@ function fighterSelected(id) {
 }
 
 function getFighters(character) {
-
+  var fighter = document.querySelector('character')
 }
