@@ -20,7 +20,9 @@ buttonAudio.addEventListener('click', musicPause)
 
 vidButton.addEventListener('click', videoPause)
 
-characterButton.addEventListener('click', videoPause)
+characterButton.addEventListener('click', characterVideoPause)
+
+themeAudio.volume = 0.1
 
 
 function videoPause() {
@@ -51,11 +53,23 @@ function characterVideoPause() {
 function musicPause() {
   if(themeAudio.paused){
     themeAudio.play()
-    buttonAudio.classList.remove('play-audio')
-    buttonAudio.classList.add('mute-audio')
-  } else {
-    themeAudio.pause()
     buttonAudio.classList.remove('mute-audio')
     buttonAudio.classList.add('play-audio')
+  } else {
+    themeAudio.pause()
+    buttonAudio.classList.remove('play-audio')
+    buttonAudio.classList.add('mute-audio')
+  }
+}
+
+function audioPause(){
+  if (themeAudio.paused) {
+    themeAudio.play()
+    characterButton.classList.remove('mute-audio')
+    characterButton.classList.add('play-audio')
+  } else {
+    themeAudio.pause()
+    characterButton.classList.remove('play-audio')
+    characterButton.classList.add('mute-audio')
   }
 }
