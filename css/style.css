@@ -25,6 +25,15 @@ p {
   margin: 2rem;
 }
 
+.no-amiibos{
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 5rem;
+
+}
+
 #smash-trailer {
   position: fixed;
   right: 0;
