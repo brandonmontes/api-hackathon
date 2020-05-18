@@ -4,6 +4,11 @@ h1 {
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fffdfd, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
+h3 {
+    font-family: 'super_smash';
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fffdfd, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
 #smash-trailer {
   position: fixed;
   right: 0;

@@ -11,9 +11,17 @@ var exitPage = document.getElementById('exit')
 
 var meleePage = document.getElementById('melee')
 
+var fighterContainer = document.querySelector('.fighter-container')
+
 meleePage.addEventListener('click', meleeMenu)
 
 exitPage.addEventListener('click', mainMenu)
+
+fighterContainer.addEventListener('click', e => {
+  if(!e.target.classList.contains('fighter-select')) return;
+  const {id} = e.target
+  fighterSelected(id)
+})
 
 function meleeMenu() {
   page1.classList.add('hidden')
