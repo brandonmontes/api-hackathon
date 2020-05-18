@@ -4,9 +4,25 @@ h1 {
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fffdfd, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
-h3 {
+h2 {
     font-family: 'super_smash';
+    font-size: xxx-large;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fffdfd, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+p {
+      font-family: 'super_smash';
+    font-size: xx-large;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fffdfd, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.amiibo-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.amiibo {
+  margin: 2rem;
 }
 
 #smash-trailer {
