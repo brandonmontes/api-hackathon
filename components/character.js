@@ -33,7 +33,7 @@ function amiiboSelected(charname, id) {
     method: "GET",
     url: "https://www.amiiboapi.com/api/amiibo/?character=" + charname,
     success: amiiboSelectedSuccess,
-    fail: amiiboSelectedError
+    fail: amiiboSelectedError(charname)
   })
   chosenFighterAmiibo(id, charname)
 }
@@ -45,12 +45,26 @@ function amiiboSelectedSuccess(data) {
   createAmiibo(amiiboName, amiiboArray)
 }
 
-function amiiboSelectedError(error) {
-  console.log(error)
-  // var noAmiibo = document.createElement('h2')
-  // noAmiibo.textContent = 'No Amiibos Found'
-  // fighterContainer.append(noAmiibo)
-  // console.log(noAmiibo)
+function amiiboSelectedError(charname) {
+  var errorAmiibo = document.createElement('div')
+  var amiiboName = document.createElement('h2')
+  var noAmiibo = document.createElement('p')
+  var buttonReturn = document.createElement('button')
+  errorAmiibo.classList.add('amiibo-container')
+  buttonReturn.textContent = 'Return'
+  amiiboName.textContent = charname
+  noAmiibo.textContent = 'No Amiibos Found'
+  buttonReturn.classList.add('exit-main-screen')
+  errorAmiibo.append(amiiboName)
+  errorAmiibo.append(noAmiibo)
+  errorAmiibo.append(buttonReturn)
+  fighterContainer.append(errorAmiibo)
+  buttonReturn.addEventListener('click', function fighterMenu(){
+    for (var a = 0; a < fighterButton.length; a++) {
+      fighterButton[a].classList.remove('hidden')
+    }
+    fighterContainer.removeChild(errorAmiibo)
+  })
 }
 
 function chosenFighterAmiibo(id, name) {
@@ -66,7 +80,7 @@ function createAmiibo (name, amiibos) {
   var amiiboSeries = document.createElement('h2')
   var returnButton = document.createElement('button')
   var amiiboInfo = document.createElement('div')
-  amiiboInfo.classList.add('amiibo-container')
+  amiiboInfo.classList.add('no-amiibo')
   returnButton.textContent = 'Return'
   returnButton.classList.add('exit-main-screen')
   amiiboSeries.textContent = name
